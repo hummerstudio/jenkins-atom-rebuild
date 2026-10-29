@@ -1,0 +1,21 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the declaration
+        run: ./tools/check.sh
+      - name: Build the package
+        run: ./build.sh
+      - uses: actions/upload-artifact@v4
+        with:
+          name: rebuild-atom
+          path: dist/rebuild/

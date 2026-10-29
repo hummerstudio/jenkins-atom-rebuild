@@ -1,0 +1,8 @@
+{
+  "name": "Rebuild",
+  "summary": "把 rebuild 插件变成两条声明：构建页一个入口，点了用同样的参数重跑。",
+  "author": "hummerstudio",
+  "license": "MIT",
+  "tags": ["ui", "build", "official-port"],
+  "homepage": "https://github.com/hummerstudio/jenkins-atom-rebuild"
+}

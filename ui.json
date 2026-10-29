@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "surfaces": [
+    {
+      "id": "rebuild",
+      "where": "run",
+      "title": "Rebuild",
+      "icon": "symbol-play",
+      "blocks": [
+        {
+          "kind": "text",
+          "text": "Rebuild {job} #{build.number} with the parameters it ran with."
+        },
+        {
+          "kind": "action",
+          "label": "Rebuild",
+          "action": {
+            "kind": "build",
+            "params": {
+              "from": "build"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

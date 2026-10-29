@@ -1,0 +1,15 @@
+{
+  "atomCode": "rebuild",
+  "name": "Rebuild",
+  "version": "1.0.0",
+  "description": "Puts a Rebuild entry on every build page; pressing it starts the same job with the parameters that build ran with.",
+  "execution": {
+    "language": "none",
+    "target": "echo 'rebuild is a build-page surface: it declares ui.json and never runs as a step'"
+  },
+  "input": {},
+  "output": {},
+  "x-jenkins": {
+    "protocol": "jenkins-1"
+  }
+}
