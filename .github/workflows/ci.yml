@@ -37,4 +37,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: rebuild-atom
-          path: atom/dist/rebuild/
+          path: atom/target/dist/rebuild/
