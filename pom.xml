@@ -12,6 +12,11 @@
   </parent>
 
   <artifactId>rebuild</artifactId>
+
+  <properties>
+    <!-- nothing to cover: this atom only declares parameters and a build step -->
+    <coverage.min.line>0</coverage.min.line>
+  </properties>
   <name>Rebuild</name>
   <description>Puts a Rebuild entry on every build page; pressing it starts the same job with the parameters that build ran with.</description>
 </project>
