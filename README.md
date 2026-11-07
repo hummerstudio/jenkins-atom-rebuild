@@ -18,12 +18,12 @@ disappears from all of them; nothing is downloaded or executed to render it.
 ## Package and publish
 
 ```bash
-./build.sh                                   # → dist/rebuild/{task.json,ui.json}
+mvn verify                                   # → dist/rebuild/{task.json,ui.json}, plus RebuildIT
 tools/publish-atom.sh --center <center-dir> --atom-dir dist/rebuild --version 1.0.0 \
     --key key.pem --key-id <keyId>           # tools/ 来自 jenkins-atom-plugin 仓库
 ```
 
-The signed center inlines `ui.json`, so an installed atom renders offline; `./build.sh` also runs `tools/check.sh`,
+The signed center inlines `ui.json`, so an installed atom renders offline; `mvn verify` also runs `RebuildIT`,
 which asserts the declaration is one this runner can honour (schema 1, `where: run`, `action.kind: build`).
 
 Requires a runner with the declarative-surface contract (`ui.json`, runner ≥ 0.3).

@@ -14,8 +14,4 @@
   <artifactId>rebuild</artifactId>
   <name>Rebuild</name>
   <description>Puts a Rebuild entry on every build page; pressing it starts the same job with the parameters that build ran with.</description>
-  <properties>
-    <atom.smoke.script>${project.basedir}/tools/check.sh</atom.smoke.script>
-  </properties>
-
 </project>
